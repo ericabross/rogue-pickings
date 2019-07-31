@@ -76,13 +76,14 @@ header h1 span {
 }
 
 header nav {
-	
 	padding: 1em 0;
 }
+
 header nav ul {
 	margin: 0;
 	padding: 0;
 }
+
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
@@ -174,13 +175,14 @@ header nav ul li a {
 
 
 /* Footer */
-/*The widths are in a percentage!*/
+
 footer {
 	height: 50px;
 	border-top: 3px solid #eee;
 	margin: 0 auto;
 	text-align: center;
 }
+
 footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
@@ -192,10 +194,20 @@ footer span {
 /**************TABLET STYLES************/
 
 @media screen and (min-width: 768px) {
+	.bottom-section {
+		display: flex;
+	}
 
+	.section-one, .section-two, .section-three {
+		margin: 0 auto;
+		width: 33%;
+	}
+
+	.section-two {
+		border-right: 1px solid #eee;
+		border-left: 1px solid #eee;
+	}
 }
-
-
 
 
 /**************DESKTOP STYLES************/
@@ -204,101 +216,42 @@ footer span {
 
 @media screen and (min-width: 1200px) {
 
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
 	/* Header */
+	
 	header {
 		height: 110px;
 		border-bottom: 3px solid #77a466;
+		flex-direction: row;
 	}
 
+	.logo {
+		border: none;
+	}
+
+	.navigation {
+		justify-content: flex-end;
+		align-items: center;
+		flex-grow: 1;
+	}
+	
 	header h1 {
-		float: left;
+		padding: 0;
 		margin: 0;
-		padding: 38px 0;
 	}
-
 
 	header nav {
-		float: right;
-		padding: 46px 0;
-	}
-
-
-	/* Top Section */
-
-	.top-section,
-	.bottom-section {
-		margin: 0 auto;
-		clear: both;
-	}
-
-	.main-image {
-		height: auto;
-		float: left;
-	}
-	.main-image img {
-		width: 100%;
-		border-bottom: 3px solid #77a466;
-	}
-
-	.main-title {
-		height: auto;
-		float: left;
-	}
-	.main-title h3 {
-		text-align: left;
-		padding: 5px 0;
-		color: #77a466;
-	}
-	.main-title p {
-		padding: 0;
-		font-size: 16px;
-		line-height: 25px;
-	}
-
-	/* Bottom Section */
-
-	.section-one,
-	.section-two,
-	.section-three {
-		width: 33%;
-		height: auto;
-		float: left;
-		border-top: 1px solid #eee;
-	}
-
-	.section-one h4 {
-		padding: 10px 0;
-	}
-
-	.section-two {
-		border-left: 1px solid #eee;
-		border-right: 1px solid #eee;
-	}
-
-	.section-two h4,
-	.section-three h4 {
-		padding: 10px 30px;
-	}
-
-	.menu {
-		list-style: none;
 		padding: 0;
 	}
-	.menu li {
-		padding: 10px 0;
-		color:#77a466;
-	}
 
-	/* footer */
-
-	footer {
-		height: 50px;
-		border-top: 3px solid #eee;
-		margin: 0 auto;
-		clear: both;
-		text-align: center;
+	header nav ul li {
+		display: inline-block;
+		padding-right: 2em;
 	}
-}
 }
 
 
