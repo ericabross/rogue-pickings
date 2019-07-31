@@ -7,12 +7,19 @@
 	src: url('../fonts/wisdom-script.otf') format('opentype');
 } 
 
-body {
-	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+html {
 	font-size: 16px;
 }
 
-.hero-container{
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
 	max-width: 1200px;
 	margin: 0 auto;
 }
@@ -179,7 +186,9 @@ header nav ul li a {
 footer {
 	height: 50px;
 	border-top: 3px solid #eee;
-	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 }
 
